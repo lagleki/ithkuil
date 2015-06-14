@@ -39,7 +39,7 @@ print('\n%s:\n' % sentence)
 for word in words:
     print(word, ': ', fromString(word).abbreviatedDescription())
     
-sentence = 'Ükʰu attál în-n uhednaláň'
+sentence = 'Utan-n ažral ta'
 words = sentence.split()
     
 print('\n%s:\n' % sentence)

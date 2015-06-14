@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-from morphology import Word
+from morphology import fromString
     
 if __name__ == '__main__':
     print('Type \'quit\' to quit.')
@@ -11,4 +11,4 @@ if __name__ == '__main__':
         words = text.split()
         for word in words:
             if not word: continue
-            print('%s: %s' % (word, Word.fromString(word).describe()))
+            print(word, ': ', fromString(word).abbreviatedDescription())
